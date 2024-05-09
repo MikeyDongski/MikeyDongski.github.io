@@ -1,0 +1,118 @@
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-size:x-large;
+    margin: 0;
+    padding: 0;
+    background-color:#000;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    min-height: 110vh;
+    
+    }
+    
+    header {
+        font-family:monospace;
+        background-color:#000;
+        color:white;
+        padding: 2px;
+        text-align:center;
+        animation: fadeInDown 1s ease forwards;
+    
+    }
+    
+    @keyframes fadeInDown {
+                from {
+                    opacity: 0;
+                    transform: translateY(-50px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+    
+    
+    nav {
+        background-color: greenyellow;
+        padding: 10px;
+        text-align: left;
+    }
+    nav a {
+                transition: 0.1s ease-in;
+                color:#000;
+                text-decoration: none;
+                margin-right: 20px;
+            }
+    
+            nav a :last-child {
+               margin-right: 0;
+            }
+    
+            nav a:hover {
+                color: gray;
+                background-color: #f0f0f0;
+                border-radius: 5px;
+                padding: 8px 12px;
+            }
+    
+            main {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-image: url(pqrstuvwxyz.png);
+                background-size: cover;
+                background-position: center;
+                color: greenyellow;
+                padding: 20px;
+                text-align: left;
+                filter:brightness(85%);
+                animation: fadeInUp 1s ease forwards;
+                
+               
+            }
+    
+            main p {
+                margin: 0px 300px; 
+        text-align: left; 
+            }
+    
+            main h1 {
+                text-align: center;
+            }
+    
+            footer {
+                background-color: #000;
+                color: white;
+                padding: 3px;
+                text-align: left;
+            }
+    
+            video {
+                width: 80%; 
+                max-width: 800px; 
+                height: auto;
+                margin-top: 30px; 
+                border-radius: 5%;
+                object-fit: cover;
+            }
+    
+        
+    
+            #origin, #evolution, #impact {
+                opacity: 0;
+                animation: fadeInUp 1s ease forwards;
+            }
+    
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(50px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            } 

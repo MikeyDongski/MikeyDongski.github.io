@@ -1,0 +1,135 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:x-large;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    display:flex;
+    flex-direction: column;
+    min-height: 110vh;
+
+}
+
+header{
+    font-family:monospace;
+   background-color: #000;
+   color:#fff;
+   padding: 5px;
+   text-align:center;
+   animation: fadeInDown 1s ease forwards;
+
+}
+
+@keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+
+nav{
+    background-color: skyblue;
+    padding: 10px;
+    text-align: left;
+}
+
+nav a{
+    transition: 0.1s ease-in;
+     color:#000;
+     text-decoration: none;
+     margin-right: 20px;
+}
+
+nav a:last-child {
+    margin-right: 0;
+}
+
+nav a:hover {
+    color: gray;
+    background-color:white;
+    border-radius: 5px;
+    padding: 8px 12px;
+}
+
+main {
+    flex: 1;
+    background:url("wallpaperflare.com_wallpaper.jpg");
+    background-size:cover;
+    background-position: center;
+    color:beige;
+    padding:20px;
+    animation: fadeInUp 1s ease forwards;
+
+   
+
+
+
+}
+
+main h1 {
+            text-align: center;
+        }
+
+main p {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 200px;
+   
+        }
+
+        main h3 {
+            justify-content: left;
+        }
+
+       
+        
+    
+
+
+        #origin, #evolution, #impact {
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        } 
+       
+#photos {
+    margin-top: 20px;
+    color:skyblue;
+    text-align:left;
+    overflow:hidden;
+    padding-right: 700px;
+    animation: fadeInUp 1s ease forwards;
+}
+
+#photos img {
+    float: left; 
+    margin-right: 20px;
+    border-radius: 20px;
+    width: 360px;
+    height: 360px;
+   
+   
+}
+
+#photos p {
+    color:skyblue;
+    margin-top: 0;
+    width: calc(100% - 240px);
+    float: left;
+}

@@ -1,0 +1,99 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 120vh;
+    text-align: justify;
+}
+header {
+    font-family: monospace;
+    background-color: #000;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    animation: fadeInDown 1s ease forwards;
+}
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+nav {
+    background-color: wheat;
+    padding: 10px;
+    text-align: left;
+}
+nav a {
+    transition: 0.1s ease-in;
+    color: #000;
+    text-decoration: none;
+    margin-right: 20px;
+    position: relative;
+}
+nav a:hover {
+    color: gray;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 8px 12px;
+}
+
+main {
+    flex: 1;
+    background-image: url("spacedust.webp");
+    background-size: cover;
+    background-position: center;
+    color: wheat;
+    padding: 20px;
+    filter: brightness(86%);
+    animation: fadeInUp 1s ease forwards;
+}
+
+main h1 {
+    text-align:center;
+}
+main p, h2 {
+    margin: 20px 300px;
+    text-align: left;
+}
+#origin, #evolution, #impact {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+video {
+    border-radius: 10%;
+    width: 62%;
+    height: 62%
+    
+}
+
+.video {
+    margin-left: 200px;
+    text-align: center;
+}
+
+h2.animate__animated.animate__fadeIn {
+    text-align: center;
+}
+h1.video {
+    text-align: center;
+}
