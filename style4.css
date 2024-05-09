@@ -133,3 +133,17 @@ main p {
     width: calc(100% - 240px);
     float: left;
 }
+
+@media only screen and (max-width: 600px) {
+}
+    body {
+      font-size: 14px;
+    }
+    
+    header nav a {
+      padding: 8px; 
+    }
+    
+    main h1 {
+      font-size: 24px; 
+    }

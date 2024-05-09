@@ -97,3 +97,17 @@ h2.animate__animated.animate__fadeIn {
 h1.video {
     text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+}
+    body {
+      font-size: 14px;
+    }
+    
+    header nav a {
+      padding: 8px; 
+    }
+    
+    main h1 {
+      font-size: 24px; 
+    }
